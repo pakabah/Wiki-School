@@ -1,0 +1,38 @@
+	<html>   <!--html tag-->
+ <head><title>Sign Up</title> <!--title of the page-->
+            </head>
+
+<body> <!--body of page starts from here-->
+
+<h2>Sign Up</h2>
+
+<form name="SignUp" method="POST" action="signup.php"> <!--form submission type is POST to a php script called findme.php-->
+First name: <input type="text" name="FirstName" maxlength="20"  /> <!--define the field which is a text box for the search field-->
+<p>Last name: <input type="text" name="LastName" maxlength="20"  /></p>
+<p>User name: <input type="text" name="usr" maxlength="20" /></p>
+<p>email: <input type="email" name="email" maxlength="50" /></p>
+<p>password: <input type="password" name="pswd" maxlength="50"  /></p>
+
+
+
+	<input type="submit" name="search" value="Sign Up" /> <!--the search button-->
+</form>
+
+<!-- client-side Form Validations:-->
+
+<script  type="text/javascript">
+ var frmvalidator = new Validator("SignUp");
+ frmvalidator.addValidation("FirstName","req","Please enter your First Name");
+ frmvalidator.addValidation("FirstName","maxlen=20",
+        "Max length for FirstName is 20");
+ 
+ frmvalidator.addValidation("LastName","req", "Please enter your Last Name");
+ frmvalidator.addValidation("LastName","maxlen=20", "Max length for LastName is 20");
+ 
+ frmvalidator.addValidation("Email","maxlen=50");
+ frmvalidator.addValidation("Email","req");
+ frmvalidator.addValidation("Email","email");
+ </script>
+
+</body>
+</html>

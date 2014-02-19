@@ -1,0 +1,20 @@
+	<html>   <!--html tag-->
+ <head><title>Log In</title> <!--title of the page-->
+            </head>
+
+<body> <!--body of page starts from here-->
+
+<h2>Log In</h2>
+
+<form name="LogIn" method="POST" action="login.php"> <!--form submission type is POST to a php script called findme.php-->
+
+<p>User name: <input type="text" name="usr" /></p>
+<p>password: <input type="password" name="pswd" /></p>
+
+
+
+	<input type="submit" name="search" value="Search" /> <!--the search button-->
+</form>
+
+</body>
+</html>

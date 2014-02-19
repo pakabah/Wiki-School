@@ -1,0 +1,7 @@
+<?php
+echo "Next Page";
+$getpost = $_POST ['find'];
+echo $getpost;
+
+ }
+ ?>

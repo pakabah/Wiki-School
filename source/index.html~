@@ -1,0 +1,19 @@
+		<html>   <!--html tag-->
+ <head><title>Wiki School</title> <!--title of the page-->
+            </head>
+
+<body> <!--body of page starts from here-->
+
+<a href="SignUp.html" >Sign Up</a>
+<a href="" >Log In</a>
+<h2>Search</h2>
+
+<form name="search" method="POST" action="checker.php"> <!--form submission type is POST to a php script called findme.php-->
+Search for: <input type="text" name="find" /> <!--define the field which is a text box for the search field-->
+
+
+	<input type="submit" name="search" value="Search" /> <!--the search button-->
+</form>
+
+</body>
+</html>

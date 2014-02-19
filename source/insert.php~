@@ -1,0 +1,30 @@
+
+<?php 
+$mysqli = mysqli_connect(“localhost”, “akabah”,
+
+“ndvem92”);
+
+$_POST ['name'];
+$_POST ['address'];
+$_POST ['telephone'];
+$_POST ['region'];
+$database_name = db1;
+
+if (mysqli_connect_errno()) {
+
+printf(“Connect failed: %s\n”, mysqli_connect_error());
+else {
+	mysql_select_db($database_name, $link_identifier = null) or die ("unable to select db" .mysql_error());
+$sql = “INSERT INTO sch (name) VALUES (‘"$_POST['name']"’)”;
+$res = mysqli_query($mysqli, $sql);
+$sql = “INSERT INTO sch (address) VALUES (‘"$_POST['address']"’)”;
+$res = mysqli_query($mysqli, $sql);
+$sql = “INSERT INTO sch (telephone) VALUES (‘"$_POST['telephone']"’)”;
+$res = mysqli_query($mysqli, $sql);
+if ($res === TRUE) {
+echo “A record has been inserted.”;
+} else {
+printf(“Could not insert record: %s\n”, mysqli_error($mysqli));
+}
+mysqli_close($mysqli);
+?>
